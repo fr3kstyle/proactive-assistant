@@ -1,0 +1,22 @@
+{
+  "name": "proactive-assistant",
+  "version": "1.0.0",
+  "description": "AI-powered proactive assistant using Claude Code",
+  "type": "module",
+  "scripts": {
+    "setup:mcp": "node scripts/setup-mcp.js",
+    "setup:agents": "node scripts/setup-agents.js",
+    "worker": "node workers/task-queue-worker.js",
+    "task:create": "node scripts/create-task.js",
+    "task:list": "node scripts/list-tasks.js",
+    "memory:query": "node scripts/query-memory.js",
+    "daily-brief": "node scripts/daily-brief.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "node-cron": "^3.0.3"
+  },
+  "keywords": ["ai", "assistant", "claude", "automation", "mcp"],
+  "author": "fr3kstyle",
+  "license": "MIT"
+}

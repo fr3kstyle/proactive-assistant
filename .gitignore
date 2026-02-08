@@ -1,0 +1,7 @@
+node_modules/
+*.log
+.DS_Store
+.env
+.claude/tasks.json
+.claude/memory/
+.claude/logs/
