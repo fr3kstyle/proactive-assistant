@@ -1,6 +1,26 @@
 # Changelog
 
-All notable changes to the Proactive AI Assistant will be documented in this file.
+## [1.2.0] - 2025-02-08
+
+### Added
+- **Data Export**: Export tasks and memories to JSON files
+- **Cleanup Script**: Automatic cleanup of old tasks and decayed memories
+- **Backup Script**: Shell script for backing up all data
+- **Log Rotation**: Automatic log file rotation
+- **Memory Decay**: Automatic decay score calculation
+- **Enhanced Monitoring**: System statistics dashboard
+
+### Improved
+- Better data management utilities
+- Enhanced export functionality
+- Improved cleanup operations
+- Better backup handling
+
+### New Commands
+- `npm run cleanup` - Clean old tasks and decay memories
+- `npm run export` - Export data to JSON files
+- `npm run backup` - Backup all assistant data
+- `npm run test:all` - Run all tests
 
 ## [1.1.0] - 2025-02-08
 
@@ -11,29 +31,18 @@ All notable changes to the Proactive AI Assistant will be documented in this fil
 - Memory decay score calculation
 - Task dependency validation
 - Enhanced logging with timestamps
-- Task priority ordering verification
-- Memory retrieval by category
-- System statistics dashboard
 
 ### Improved
 - Better error handling in worker
 - More reliable task execution
 - Enhanced memory tracking
 - Improved log format
-- Better task dependency handling
-
-### Fixed
-- Fixed typo in agents setup script
-- Improved task status updates
-- Better memory access tracking
 
 ## [1.0.0] - 2025-02-08
 
 ### Initial Release
 - Task Queue MCP server with priority scheduling
 - Memory Manager MCP server with temporal tracking
-- 4 specialized subagents (automation, researcher, communicator, developer)
-- Worker scripts for cron-based automation
-- Setup scripts for easy installation
-- Comprehensive documentation
-- MIT license
+- 4 specialized subagents
+- Worker scripts for automation
+- Setup scripts and documentation

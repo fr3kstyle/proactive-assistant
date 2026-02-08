@@ -1,6 +1,6 @@
 {
   "name": "proactive-assistant",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "AI-powered proactive assistant using Claude Code with autonomous task management, long-term memory, and platform integration",
   "type": "module",
   "scripts": {
@@ -9,19 +9,22 @@
     "worker": "node workers/improved-worker.js",
     "worker:legacy": "node workers/task-queue-worker.js",
     "monitor": "node scripts/monitor.js",
+    "cleanup": "node scripts/cleanup.js",
+    "backup": "bash scripts/backup.sh",
+    "export": "node scripts/export-data.js",
     "task:create": "node scripts/create-task.js",
     "task:list": "node scripts/list-tasks.js",
     "memory:query": "node scripts/query-memory.js",
     "daily-brief": "node scripts/daily-brief.js",
     "test": "node test/comprehensive-test.js",
     "test:mcp": "node test/test-mcp.js",
-    "test:memory": "node test/test-memory.js"
+    "test:memory": "node test/test-memory.js",
+    "test:all": "npm run test:mcp && npm run test:memory && npm run test"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
     "node-cron": "^3.0.3"
   },
-  "devDependencies": {},
   "keywords": [
     "ai",
     "assistant",
@@ -30,7 +33,9 @@
     "mcp",
     "task-management",
     "memory",
-    "proactive"
+    "proactive",
+    "backup",
+    "monitoring"
   ],
   "author": "fr3kstyle",
   "license": "MIT",

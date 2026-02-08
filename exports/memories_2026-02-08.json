@@ -1,0 +1,72 @@
+{
+  "memories": [
+    {
+      "id": "mem-8564e7da-e178-4b2d-bda5-cac58484bf05",
+      "type": "preference",
+      "category": "coding",
+      "content": "Prefers TypeScript over JavaScript for new projects",
+      "tags": [
+        "typescript",
+        "coding",
+        "preference"
+      ],
+      "importance": 8,
+      "created_at": "2026-02-08T05:02:32.406Z",
+      "accessed_at": "2026-02-08T05:02:32.410Z",
+      "access_count": 1,
+      "decay_score": "0.0692",
+      "related_ids": []
+    },
+    {
+      "id": "mem-1f9e57d4-5822-46d4-bbd8-9f4aadc52737",
+      "type": "preference",
+      "category": "coding",
+      "content": "Prefers TypeScript",
+      "importance": 9,
+      "tags": [
+        "coding"
+      ],
+      "created_at": "2026-02-08T05:04:15.021Z",
+      "accessed_at": "2026-02-08T05:04:15.021Z",
+      "access_count": 0,
+      "decay_score": "0.0000",
+      "related_ids": []
+    },
+    {
+      "id": "mem-0f23b760-6a7f-4a5b-8ea4-dfd0847b0c9f",
+      "type": "skill",
+      "category": "programming",
+      "content": "Proficient in Node.js",
+      "importance": 8,
+      "tags": [
+        "programming"
+      ],
+      "created_at": "2026-02-08T05:04:15.021Z",
+      "accessed_at": "2026-02-08T05:04:15.021Z",
+      "access_count": 0,
+      "decay_score": "0.0000",
+      "related_ids": []
+    },
+    {
+      "id": "mem-0e03d8f7-13a5-43e9-92cc-89b1f18b4404",
+      "type": "pattern",
+      "category": "workflow",
+      "content": "Works on coding in morning",
+      "importance": 6,
+      "tags": [
+        "workflow"
+      ],
+      "created_at": "2026-02-08T05:04:15.021Z",
+      "accessed_at": "2026-02-08T05:04:15.021Z",
+      "access_count": 0,
+      "decay_score": "0.0000",
+      "related_ids": []
+    }
+  ],
+  "categories": [
+    "coding",
+    "programming",
+    "workflow"
+  ],
+  "lastId": 1
+}

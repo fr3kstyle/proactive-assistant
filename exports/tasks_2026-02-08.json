@@ -1,0 +1,79 @@
+{
+  "tasks": [
+    {
+      "id": "task-1770526936811-z4sj2gv8w",
+      "description": "Test task: Verify system functionality",
+      "priority": "high",
+      "category": "automation",
+      "status": "in_progress",
+      "created_at": "2026-02-08T05:02:16.811Z",
+      "updated_at": "2026-02-08T05:02:16.831Z"
+    },
+    {
+      "id": "task-1770527055017-o0ef32z7u",
+      "description": "Critical system update",
+      "priority": "critical",
+      "category": "automation",
+      "status": "completed",
+      "dependencies": [],
+      "created_at": "2026-02-08T05:04:15.017Z",
+      "updated_at": "2026-02-08T05:04:16.075Z",
+      "result": "Task completed successfully at 2026-02-08T05:04:16.074Z",
+      "completed_at": "2026-02-08T05:04:16.075Z"
+    },
+    {
+      "id": "task-1770527055018-5z6vurxtb",
+      "description": "Research new technologies",
+      "priority": "medium",
+      "category": "research",
+      "status": "pending",
+      "dependencies": [],
+      "created_at": "2026-02-08T05:04:15.018Z",
+      "updated_at": "2026-02-08T05:04:15.018Z"
+    },
+    {
+      "id": "task-1770527055018-5h0m461q5",
+      "description": "Review pull requests",
+      "priority": "high",
+      "category": "development",
+      "status": "pending",
+      "dependencies": [],
+      "created_at": "2026-02-08T05:04:15.018Z",
+      "updated_at": "2026-02-08T05:04:15.018Z"
+    },
+    {
+      "id": "task-1770527055018-iyj8l6fll",
+      "description": "Organize documentation",
+      "priority": "low",
+      "category": "communication",
+      "status": "pending",
+      "dependencies": [],
+      "created_at": "2026-02-08T05:04:15.018Z",
+      "updated_at": "2026-02-08T05:04:15.018Z"
+    },
+    {
+      "id": "task-1770527056091-parent",
+      "description": "Parent task: Set up database",
+      "priority": "high",
+      "category": "automation",
+      "status": "completed",
+      "dependencies": [],
+      "created_at": "2026-02-08T05:04:16.091Z",
+      "updated_at": "2026-02-08T05:04:16.091Z",
+      "completed_at": "2026-02-08T05:04:16.091Z"
+    },
+    {
+      "id": "task-1770527056091-child",
+      "description": "Child task: Migrate data",
+      "priority": "high",
+      "category": "automation",
+      "status": "pending",
+      "dependencies": [
+        "task-1770527056091-parent"
+      ],
+      "created_at": "2026-02-08T05:04:16.091Z",
+      "updated_at": "2026-02-08T05:04:16.091Z"
+    }
+  ],
+  "lastId": 1
+}
