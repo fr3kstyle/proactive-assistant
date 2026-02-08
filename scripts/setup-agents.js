@@ -7,7 +7,7 @@ const AGENTS_DIR = path.join(process.env.HOME, 'proactive-assistant', '.claude',
 const CLAUDE_AGENTS_DIR = path.join(process.env.HOME, '.claude', 'agents');
 
 async function setupAgents() {
-  await fs.mkdir(CLADE_AGENTS_DIR, { recursive: true });
+  await fs.mkdir(CLAUDE_AGENTS_DIR, { recursive: true });
   
   const agents = ['automation', 'researcher', 'communicator', 'developer'];
   
