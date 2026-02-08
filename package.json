@@ -1,22 +1,45 @@
 {
   "name": "proactive-assistant",
-  "version": "1.0.0",
-  "description": "AI-powered proactive assistant using Claude Code",
+  "version": "1.1.0",
+  "description": "AI-powered proactive assistant using Claude Code with autonomous task management, long-term memory, and platform integration",
   "type": "module",
   "scripts": {
     "setup:mcp": "node scripts/setup-mcp.js",
     "setup:agents": "node scripts/setup-agents.js",
-    "worker": "node workers/task-queue-worker.js",
+    "worker": "node workers/improved-worker.js",
+    "worker:legacy": "node workers/task-queue-worker.js",
+    "monitor": "node scripts/monitor.js",
     "task:create": "node scripts/create-task.js",
     "task:list": "node scripts/list-tasks.js",
     "memory:query": "node scripts/query-memory.js",
-    "daily-brief": "node scripts/daily-brief.js"
+    "daily-brief": "node scripts/daily-brief.js",
+    "test": "node test/comprehensive-test.js",
+    "test:mcp": "node test/test-mcp.js",
+    "test:memory": "node test/test-memory.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
     "node-cron": "^3.0.3"
   },
-  "keywords": ["ai", "assistant", "claude", "automation", "mcp"],
+  "devDependencies": {},
+  "keywords": [
+    "ai",
+    "assistant",
+    "claude",
+    "automation",
+    "mcp",
+    "task-management",
+    "memory",
+    "proactive"
+  ],
   "author": "fr3kstyle",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fr3kstyle/proactive-assistant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fr3kstyle/proactive-assistant/issues"
+  },
+  "homepage": "https://github.com/fr3kstyle/proactive-assistant#readme"
 }
